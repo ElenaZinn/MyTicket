@@ -19,19 +19,23 @@ Store concert, movies and musical tickets in the form of electronic tickets
 
 **Step1: Create NoteBooks**
 
-<img width="1201" alt="image" src="https://github.com/user-attachments/assets/89ec2f2f-3339-4493-b6da-9e7021c4cbe2" />
+![image](https://github.com/user-attachments/assets/3952229e-a525-4ddc-8423-f1118e060147)
+
 
 **Step2: Create one page.**
 
-<img width="1596" alt="image" src="https://github.com/user-attachments/assets/c5338983-de5a-4db0-a816-4c15f314430a" />
+![image](https://github.com/user-attachments/assets/d9cbf779-8f76-41cc-b53e-dec9555dfe40)
+
 
 
 **Step3: Click the eye icon to view the full image.**
 
-<img width="801" alt="image" src="https://github.com/user-attachments/assets/d483590e-5027-415a-be69-d59b60d1e0d4" />
+![image](https://github.com/user-attachments/assets/9a108a1e-c78a-4dcb-b52f-8db6efd2cbd6)
+
 
 
 **Step4: Press the pencil icon to edit the basic information.**
 
-<img width="1603" alt="image" src="https://github.com/user-attachments/assets/a9222a5a-ac57-4c1f-8c01-6256d44f8c36" />
+![image](https://github.com/user-attachments/assets/e57ffbba-0c67-42bb-bb06-591915275822)
+
 
