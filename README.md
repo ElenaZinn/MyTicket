@@ -23,12 +23,15 @@ Store concert, movies and musical tickets in the form of electronic tickets
 
 **Step2: Create one page.**
 
-<img width="1588" alt="image" src="https://github.com/user-attachments/assets/b7ecf2d6-f4a0-4c34-8e82-4dfcfd505376" />
+<img width="1596" alt="image" src="https://github.com/user-attachments/assets/c5338983-de5a-4db0-a816-4c15f314430a" />
+
 
 **Step3: Click the eye icon to view the full image.**
 
-<img width="801" alt="image" src="https://github.com/user-attachments/assets/538e4b60-1a1a-40f3-b969-95e6b98ab987" />
+<img width="801" alt="image" src="https://github.com/user-attachments/assets/d483590e-5027-415a-be69-d59b60d1e0d4" />
+
 
 **Step4: Press the pencil icon to edit the basic information.**
 
-<img width="1595" alt="image" src="https://github.com/user-attachments/assets/25a09b13-10d8-4f4c-8505-0126a7acedd7" />
+<img width="1603" alt="image" src="https://github.com/user-attachments/assets/a9222a5a-ac57-4c1f-8c01-6256d44f8c36" />
+
