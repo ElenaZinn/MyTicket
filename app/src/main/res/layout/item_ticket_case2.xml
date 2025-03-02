@@ -9,7 +9,7 @@
         android:id="@+id/ivTicketImage"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:scaleType="fitXY"
+        android:scaleType="fitCenter"
         tools:src="@drawable/placeholder_ticket" />
 
     <!-- 底部信息蒙版 -->
