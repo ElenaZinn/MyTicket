@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ColorSelector 尺寸 -->
+    <dimen name="color_view_corner_radius">4dp</dimen>
+    <dimen name="selected_color_elevation">4dp</dimen>
+    <dimen name="viewpager_page_margin">16dp</dimen>
+    <dimen name="viewpager_page_offset">30dp</dimen>
+    <dimen name="popup_margin">32dp</dimen>
+</resources>

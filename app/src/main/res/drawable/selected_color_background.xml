@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 不使用透明色，而是让代码动态设置颜色 -->
+    <item android:id="@+id/color_background">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/color_view_corner_radius" />
+            <!-- 不设置固定颜色，将在代码中动态设置 -->
+        </shape>
+    </item>
+
+    <!-- 边框保持不变 -->
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/color_view_corner_radius" />
+            <stroke
+                android:width="2dp"
+                android:color="#2196F3" />
+        </shape>
+    </item>
+</layer-list>

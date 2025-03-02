@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TicketDetailActivity">
+
+  <androidx.appcompat.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="?attr/actionBarSize"
+      android:background="@color/white"
+      android:elevation="4dp"
+      app:layout_constraintVertical_chainStyle="packed"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintBottom_toTopOf="@+id/scroll"
+      app:layout_constraintVertical_bias="0">
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="返回"
+        android:src="@drawable/ic_back" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="票据详情"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <ImageButton
+        android:id="@+id/btnEdit"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_gravity="end"
+        android:layout_marginEnd="8dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="编辑"
+        android:src="@drawable/ic_edit" />
+  </androidx.appcompat.widget.Toolbar>
+
+<!--  <ScrollView-->
+<!--      android:id="@+id/scroll"-->
+<!--      android:layout_width="match_parent"-->
+<!--      android:layout_height="0dp"-->
+<!--      app:layout_constraintBottom_toBottomOf="parent"-->
+<!--      app:layout_constraintTop_toBottomOf="@+id/toolbar">-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar">
+      <androidx.cardview.widget.CardView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_margin="16dp"
+          app:cardCornerRadius="12dp"
+          app:cardElevation="8dp"
+          app:layout_constraintBottom_toBottomOf="parent"
+          app:layout_constraintEnd_toEndOf="parent"
+          app:layout_constraintStart_toStartOf="parent"
+          app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+          <!-- 票根背景和图片区域 -->
+          <FrameLayout
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="3"
+              android:background="@drawable/ticket_stub_background">
+
+            <ImageView
+                android:id="@+id/ivTicketImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                tools:src="@drawable/placeholder_ticket"
+                />
+
+          </FrameLayout>
+
+          <!-- 虚线分隔 -->
+          <View
+              android:layout_width="match_parent"
+              android:layout_height="2dp"
+              android:background="@drawable/dotted_line" />
+
+          <androidx.cardview.widget.CardView
+              android:id="@+id/detail_cardview"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="16dp"
+              app:cardCornerRadius="8dp"
+              app:cardElevation="4dp"
+              android:gravity="bottom"
+              android:visibility="gone"
+              app:layout_constraintBottom_toBottomOf="parent"
+              tools:visibility="visible">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+              <TextView
+                  android:id="@+id/tvTitle"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:textColor="@color/black"
+                  android:textSize="20sp"
+                  android:textStyle="bold"
+                  tools:text="电影名称" />
+
+              <View
+                  android:layout_width="match_parent"
+                  android:layout_height="1dp"
+                  android:layout_marginTop="8dp"
+                  android:layout_marginBottom="8dp"
+                  android:background="#EEEEEE" />
+
+              <TextView
+                  android:id="@+id/tvDateTime"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:drawableStart="@drawable/ic_calendar"
+                  android:drawablePadding="8dp"
+                  android:gravity="center_vertical"
+                  android:textSize="16sp"
+                  tools:text="2023-08-15 19:30" />
+
+              <TextView
+                  android:id="@+id/tvLocation"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="8dp"
+                  android:drawableStart="@drawable/ic_location"
+                  android:drawablePadding="8dp"
+                  android:gravity="center_vertical"
+                  android:textSize="16sp"
+                  tools:text="某某电影院" />
+
+              <RatingBar
+                  android:id="@+id/ratingBar"
+                  style="?android:attr/ratingBarStyleIndicator"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginTop="16dp"
+                  android:isIndicator="true"
+                  android:numStars="5"
+                  android:stepSize="0.5"
+                  tools:rating="4.5" />
+            </LinearLayout>
+          </androidx.cardview.widget.CardView>
+
+
+          <!-- 票据信息区域 -->
+          <LinearLayout
+              android:id="@+id/editView"
+              android:layout_width="match_parent"
+              android:layout_height="0dp"
+              android:layout_weight="2"
+              android:orientation="vertical"
+              android:padding="16dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="剧目">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etTitle"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="时间">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etDateTime"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:focusable="false"
+                  android:inputType="none" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:hint="地点">
+
+              <com.google.android.material.textfield.TextInputEditText
+                  android:id="@+id/etLocation"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:inputType="text" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+              <TextView
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="轻触评分："
+                  android:textColor="@color/gray" />
+
+              <RatingBar
+                  android:id="@+id/ratingBar2"
+                  style="?android:attr/ratingBarStyleSmall"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_marginStart="40dp"
+                  android:isIndicator="false"
+                  android:numStars="5"
+                  android:stepSize="0.5"
+                  android:scaleX="1.8"
+                  android:scaleY="1.8" />
+
+
+
+            </LinearLayout>
+          </LinearLayout>
+        </LinearLayout>
+      </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<!--  </ScrollView>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

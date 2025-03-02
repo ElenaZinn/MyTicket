@@ -1,0 +1,28 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyTicket" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/macaron_primary</item>
+        <item name="colorPrimaryVariant">@color/macaron_secondary_variant</item>
+        <item name="colorOnPrimary">@color/macaron_on_primary</item>
+
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/macaron_secondary</item>
+        <item name="colorSecondaryVariant">@color/macaron_secondary_variant</item>
+        <item name="colorOnSecondary">@color/macaron_on_secondary</item>
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Additional colors -->
+        <item name="android:colorBackground">@color/macaron_background</item>
+        <item name="colorSurface">@color/macaron_surface</item>
+        <item name="colorError">@color/macaron_error</item>
+        <item name="colorOnBackground">@color/macaron_on_background</item>
+        <item name="colorOnSurface">@color/macaron_on_surface</item>
+        <item name="colorOnError">@color/macaron_on_error</item>
+        <item name="colorAccent">@color/macaron_accent</item>
+    </style>
+
+
+</resources>
