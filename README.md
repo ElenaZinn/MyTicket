@@ -1,5 +1,5 @@
 # MyTicket
-Store concert, movies and musical tickets in the form of electronic tickets
+Store concert, movies and musical tickets in the form of electronic tickets. Code by using DeepClaude.
 
 ## Supports:
 
